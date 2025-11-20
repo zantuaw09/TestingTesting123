@@ -30,12 +30,14 @@ class UniqueCollectionTest {
         collection.addItem(Item("Item1"))
         collection.addItem(Item("Item1"))   // tests if unique Item is not added
 
-        assert(collection.size() == 1)
+        assert(collection.size() == 1 &&
+                collection.get(collection.size()-1).name == "Item1")    // ensures current Item was the latest added
 
         collection.addItem(Item("Item2"))
         collection.addItem(Item("item2"))   // tests if uniqueness is non-case sensitive
 
-        assert(collection.size() == 2)
+        assert(collection.size() == 2 &&
+                collection.get(collection.size()-1).name == "Item2")    // ensures current Item was the latest added
     }
 
     // Test Driven Development (TDD) test - complete specified function so that this test passes
