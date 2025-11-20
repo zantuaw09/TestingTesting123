@@ -20,7 +20,7 @@ class UniqueCollection {
     }
 
 
-    // TODO 3: Complete this function such that the pre-written Unit Test (TDD) passes
+    // Completed this function such that the pre-written Unit Test (TDD) passes
 
     /** Clear all items from the collection */
     fun clear () {
